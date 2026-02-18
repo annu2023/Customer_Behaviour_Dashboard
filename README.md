@@ -38,11 +38,7 @@ The final dashboard provides actionable insights into customer behavior, revenue
 
 🗂️ Dataset Files
 
-customers.csv – Customer demographic information
-
-orders.csv – Transactional purchase data
-
-products.csv – Product category and pricing details
+customer_shopping_behavior.csv - Consolidated dataset containing customer demographics, purchase details, product categories, discounts, reviews, payment methods, and sales channel information
 
 Customer Behaviour Dashboard.pbix – Interactive Power BI dashboard
 
