@@ -4,128 +4,133 @@ This project presents an interactive Customer Behaviour Dashboard built using Po
 
 PostgreSQL | Python | Power BI
 
+🏢 Business Problem
+
+A leading retail company wants to better understand its customer shopping behavior to improve sales, customer satisfaction, and long-term loyalty.
+
+The management team has observed changing purchasing patterns across:
+
+Customer demographics
+
+Product categories
+
+Sales channels (Online vs Offline)
+
+They are particularly interested in identifying which factors — such as discounts, reviews, seasons, and payment preferences — influence consumer decisions and repeat purchases.
+
+🎯 Overarching Business Question
+
+How can the company leverage consumer shopping data to identify trends, improve customer engagement, and optimize marketing and product strategies?
+
 🔎 Project Overview
 
-This project analyzes customer purchasing behavior using PostgreSQL for data storage, Python for data processing, and Power BI for interactive visualization.
+This project builds an end-to-end analytics solution to answer the above business question using structured consumer data.
 
-The goal is to extract meaningful business insights from raw transactional data and build a dynamic dashboard that helps in understanding customer trends, product performance, and revenue growth.
+The solution integrates:
+
+PostgreSQL for data storage and relational modeling
+
+Python (Pandas) for data cleaning and exploratory analysis
+
+Power BI for interactive dashboard visualization
+
+The final dashboard provides actionable insights into customer behavior, revenue trends, and marketing optimization opportunities.
 
 🗂️ Dataset Files
 
-The project includes the following datasets:
+customers.csv – Customer demographic information
 
-customers.csv – Customer demographic and profile information
+orders.csv – Transactional purchase data
 
-orders.csv – Transactional order details
+products.csv – Product category and pricing details
 
-products.csv – Product category and pricing information
-
-Customer Behaviour Dashboard.pbix – Final interactive Power BI dashboard
+Customer Behaviour Dashboard.pbix – Interactive Power BI dashboard
 
 ⚙️ Tech Stack
 
-PostgreSQL – Database creation, data storage, SQL queries
+PostgreSQL – Database design, SQL queries, joins, aggregations
 
-Python (Pandas, SQLAlchemy, Psycopg2) –
+Python (Pandas, SQLAlchemy, Psycopg2) – Data preprocessing & EDA
 
-Data cleaning & transformation
-
-Data loading into PostgreSQL
-
-Exploratory Data Analysis (EDA)
-
-Power BI – Data modeling, DAX measures, dashboard development
+Power BI – Data modeling, DAX calculations, dashboard development
 
 🔄 Project Workflow
+1️⃣ Data Preparation
 
-Data Collection
+Imported CSV files into PostgreSQL
 
-Imported CSV files into PostgreSQL database
+Cleaned missing values and standardized formats using Python
 
-Data Cleaning & Transformation (Python)
+Built relational schema connecting customers, orders, and products
 
-Handled missing values
+2️⃣ Data Analysis
 
-Standardized data formats
+Used SQL (JOINs, CTEs, GROUP BY, Window Functions) to analyze trends
 
-Removed duplicates
+Performed customer segmentation and behavioral analysis
 
-Performed feature engineering
+Evaluated discount impact and repeat purchase behavior
 
-Data Modeling (PostgreSQL)
+3️⃣ Dashboard Development
 
-Created relational schema
+Created interactive Power BI reports including:
 
-Used JOIN operations to combine customers, orders, and products
+KPI Cards (Total Revenue, Orders, Customers, AOV)
 
-Aggregated sales and revenue metrics
-
-Visualization (Power BI)
-
-Built KPIs: Total Revenue, Total Orders, Average Order Value
-
-Customer segmentation analysis
-
-Product category performance
-
-Time-based sales trends
-
-Interactive slicers and filters
-
-📊 Key Insights
-
-Identification of high-value customers
-
-Revenue contribution by product category
-
-Repeat vs one-time purchase behavior
-
-Seasonal sales patterns
-
-Customer purchasing frequency trends
-
-🧠 SQL Concepts Used
-
-INNER JOIN
-
-GROUP BY & HAVING
-
-Aggregate Functions (SUM, COUNT, AVG)
-
-Window Functions
-
-CTEs (Common Table Expressions)
-
-📈 Dashboard Features
-
-KPI Cards (Revenue, Orders, Customers)
-
-Monthly/Quarterly Sales Trend
+Online vs Offline Sales Comparison
 
 Category-wise Revenue Distribution
 
-Top Customers Analysis
+Seasonal Sales Trends
 
-Dynamic filtering by date & category
+Payment Method Preferences
 
-🚀 How to Run the Project
+Customer Retention Insights
+
+📊 Key Insights Generated
+
+Identification of high-value customer segments
+
+Seasonal trends influencing purchasing behavior
+
+Impact of discounts and reviews on sales
+
+Channel performance comparison (Online vs Offline)
+
+Customer repeat purchase patterns
+
+💡 Business Value
+
+This project demonstrates how consumer shopping data can be leveraged to:
+
+Improve targeted marketing campaigns
+
+Optimize pricing and discount strategies
+
+Enhance customer engagement
+
+Support inventory and seasonal planning
+
+Increase long-term customer loyalty
+
+🚀 How to Run
 
 Import CSV files into PostgreSQL
 
-Run Python scripts to clean and load data
+Run Python scripts for cleaning and transformation
 
 Connect Power BI to PostgreSQL
 
 Open Customer Behaviour Dashboard.pbix
 
-Refresh the data model
+Refresh data and explore insights
 
 🔮 Future Enhancements
 
-Customer churn prediction model
+RFM Analysis
 
-RFM analysis
+Customer Churn Prediction Model
 
-Cohort analysis
+Cohort Analysis
 
-Deployment using Power BI Service
+Deployment to Power BI Service
